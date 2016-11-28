@@ -1,0 +1,20 @@
+/* pages/game/index.wxss */
+page{
+    background-color: rgba(226, 231, 241, 0.68);
+}
+.stage{position: relative}
+.progress{text-align: center;margin-top: 50%}
+.progress progress{width: 80%;margin: 0 auto}
+.score{color: #1c3648}
+.score,.say-words{font-size: 32rpx;text-align: center;margin: 20rpx 0;transition: all .2s ease-out;}
+.score .win-num{color:#e64340;font-size: 54rpx;transition: all .2s ease-out;display: inline-block;margin: 0 8rpx}
+/*.score .win-num:active{transform: scale(1.5)}*/
+.choice{padding: 20rpx}
+.choice image{width: 200rpx;height: 200rpx;transition: all 0.2s}
+.choice image:active{transform: scale(1.4)}
+.say-words{font-size: 40rpx;color: #576b95;text-shadow: 1px 6px 10px #576b95;}
+.result{margin-top: 150rpx}
+.winOrlose{width: 200rpx;height: 200rpx;line-height: 200rpx;font-size: 50rpx;text-align: center;color: #b963e4}
+.winOrlose.win{color: #09bb07}
+.winOrlose.lose{color: #e64340}
+.mask{position: absolute;height: 100%;width: 100%;z-index: 9;top: 0;left: 0}

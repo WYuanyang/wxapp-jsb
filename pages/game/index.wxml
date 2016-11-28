@@ -1,0 +1,30 @@
+<!--pages/game/index.wxml-->
+<view hidden="{{progressHidden}}" class="progress">
+    <progress percent="{{percent}}" show-info active />
+    <text>资源加载中...</text>
+</view>
+<view hidden="{{stageHidden}}" class="stage">
+    <view class="score ">
+        <view>您已经获胜<view class="win-num">{{winNum}}</view>次！</view>
+        <!--<view>连续获胜<view style="{{winNumAnimation}}" class="win-num">{{successionWinNum}}</view>次！</view>-->
+    </view>
+    <view class="choice flex space-between">
+        <image bindtap="play" data-val='1' src="http://ac-w38tecoi.clouddn.com/c059085d155df23dea6d.png"></image>
+        <image bindtap="play" data-val='2' src="http://ac-w38tecoi.clouddn.com/30eadef2395eb77cbafb.png"></image>
+        <image bindtap="play" data-val='3' src="http://ac-w38tecoi.clouddn.com/79258cd700140855155d.png"></image>
+    </view>
+    <view style="{{sayWordsAnimation}}"  class="say-words">{{sayWords}}</view>
+    <view class="result">
+        <view class="choice flex space-between">
+            <image src="{{playerImg}}"></image>
+            <view class="winOrlose">{{winOrlose}}</view>
+            <image src="{{pcImg}}"></image>
+        </view>
+    </view>
+    <view class="score ">
+        <view>连续获胜<view style="{{winNumAnimation}}" class="win-num">{{successionWinNum}}</view>次！</view>
+    </view>
+    <view hidden="{{maskHidden}}" class="mask"></view>
+</view>
+
+

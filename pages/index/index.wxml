@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="game-desc ">
+    <text>称号说明：（连击次数）</text>
+    <text>1、不错哟（1~3）</text>
+    <text>2、诸葛在世（4~5）</text>
+    <text>3、超神（>5）</text>
+    <label>  努力超神吧！</label>
+  </view>
+  <view class="usermotto">
+    <button type="primary" bindtap='toLoginView' class="user-motto">{{motto}}</button>
+  </view>
+</view>
